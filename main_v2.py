@@ -4,20 +4,8 @@
 
 import os
 import json
-import datetime
 import hashlib
 import time
-
-"""
-    I am going to take each folder and all files in it and put it in a list of of the filenames.
-    Each list has all of the files in the main folder and all subfolders.
-
-    I want to add where it can show how much storage you can save.
-
-    I need to clean up the functions and see if i can simplify them.
-
-    Maybe try and see if I can use this on my Iphone 
-"""
 
 #---------------helper functions---------------
 
@@ -114,7 +102,6 @@ def compare(path):
             duplicates.append(item)
         else:
             seen_hashs.add(item["hash"])
-    #print(seen_hashs)
     print(f"Total size that can be freed is {total_size:.2f} Mb.")
     write_json(duplicates)
 
