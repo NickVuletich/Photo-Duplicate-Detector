@@ -4,13 +4,7 @@
 
 import os
 import json
-import datetime
 import hashlib
-
-"""
-    I am going to take each folder and all files in it and put it in a list of of the filenames.
-    Each list has all of the files in the main folder and all subfolders.
-"""
 
 #---------------helper functions---------------
 
@@ -110,7 +104,4 @@ def compare(path):
 #----------main----------
 if __name__ == "__main__":
     compare("/Users/nickv/Desktop/untitled folder")
-    #write_json("/Users/nickv/Desktop/Files")
-    #sub_dir_files("/Users/nickv/Desktop/untitled folder")
-    #test_make_list("/Users/nickv/Desktop/untitled folder")
     print("Done running!!!")
